@@ -29,3 +29,7 @@ $('#targetElement').lightweight({
 // and close...
 $('#targetElement').lightweight('close');
 ```
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/cballou/jquery-lightweight-lightbox-plugin/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
