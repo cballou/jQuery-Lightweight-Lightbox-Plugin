@@ -1,3 +1,11 @@
+# Lightweight Lightbox jQuery Plugin #
+
+Lightweight is a very minimal jQuery lightbox/modal plugin, hence the name. There's a number of configuration options and easy to read code, so you can override to your hearts content.
+
+For full documentation, please visit:
+
+[Official Lightweight Website](https://www.coreyballou.com/projects/jquery-lightweight-lightbox-plugin/)
+
 ## Usage ##
 
 To be continued... For now, here's the set of configuration options:
