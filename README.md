@@ -8,7 +8,20 @@ For full documentation, please visit:
 
 ## Usage ##
 
-To be continued... For now, here's the set of configuration options:
+Here is a basic example of using lightweight on an element already hidden on your page. In this example, you're simply turning a hidden element into a modal.
+
+```javascript
+// open the element (assumes it's already hidden by end user)
+$('#targetElement').lightweight({
+    height: 400,
+    width: 400
+});
+
+// and close...
+$('#targetElement').lightweight('close');
+```
+
+## Default Configuration Option Values ##
 
 ```javascript
 $.fn.lightweight.defaults = {
@@ -24,20 +37,4 @@ $.fn.lightweight.defaults = {
     closeClass: '.close'
 };
 ```
-
-Basic usage:
-
-```javascript
-// open the element (assumes it's already hidden by end user)
-$('#targetElement').lightweight({
-    height: 400,
-    width: 400
-});
-
-// and close...
-$('#targetElement').lightweight('close');
-```
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/cballou/jquery-lightweight-lightbox-plugin/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
