@@ -34,14 +34,14 @@ $.get('example/test.html', function(data) {
     var $elem = $($.parseHTML(data));
 
     // open the element (assumes it's already hidden by end user)
-    $('#targetElement').lightweight({
+    $elem.lightweight({
         height: 400,
         width: 400
     });
     
     // and close after 5 seconds...
     setTimeout(function() {
-        $('#targetElement').lightweight('close');
+        $elem.lightweight('close');
     }, 5000);
 });
 ```
