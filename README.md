@@ -1,6 +1,6 @@
 # Lightweight Lightbox jQuery Plugin #
 
-Lightweight is a very minimal jQuery lightbox/modal plugin; hence the name. One popular aspect of lightweight is that it requires no additional CSS on your part as it generates inline styles on the fly when new modals are created.
+Lightweight is a very minimal jQuery lightbox/modal plugin; hence the name. One popular aspect of lightweight is that it requires no additional CSS on your part as it generates inline styles on the fly when new modals are created. It's minimalism is what gives you the greatest flexibility. For instance, you can load your own static HTML via AJAX and have it displayed in the lightbox (advanced example).
 
 There's a number of configuration options and easy to read code, so you can override to your hearts content.
 
@@ -21,6 +21,29 @@ $('#targetElement').lightweight({
 
 // and close...
 $('#targetElement').lightweight('close');
+```
+
+## Advanced Usage ##
+
+Because Lightweight expects a target element to open, you have the ability to dynamically generate or load HTML via AJAX and have the content displayed within a lightbox. Here's an example:
+
+```js
+// asynchronously download a static HTML document and use within lightbox
+$.get('example/test.html', function(data) {
+    // convert the resulting HTML into a jQuery element (requires jQuery 1.8.3+)
+    var $elem = $($.parseHTML(data));
+
+    // open the element (assumes it's already hidden by end user)
+    $('#targetElement').lightweight({
+        height: 400,
+        width: 400
+    });
+    
+    // and close after 5 seconds...
+    setTimeout(function() {
+        $('#targetElement').lightweight('close');
+    }, 5000);
+});
 ```
 
 ## Default Configuration Option Values ##
